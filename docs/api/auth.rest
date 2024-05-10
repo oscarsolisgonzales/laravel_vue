@@ -1,0 +1,30 @@
+POST http://127.0.0.1:8000/api/v1/auth/registro
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Oscar Ñandú",
+    "email": "osgñandú@gmail.com",
+    "password": "12345",
+    "c_password": "12345"
+}
+
+### Login
+POST http://127.0.0.1:8000/api/v1/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "osgñandú@gmail.com",
+    "password": "12345"
+}
+
+### Perfil
+GET http://127.0.0.1:8000/api/v1/auth/perfil
+Accept: application/json
+Authorization: Bearer 6|Ppij983rcMU61qceOiPicDcSfdAJP64YyHBEvwXsd128b8bf
+
+### Logout
+GET http://127.0.0.1:8000/api/v1/auth/logout
+Accept: application/json
+Authorization: Bearer 6|Ppij983rcMU61qceOiPicDcSfdAJP64YyHBEvwXsd128b8bf
